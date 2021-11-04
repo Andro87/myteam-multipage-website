@@ -1,0 +1,33 @@
+@import "../styles/variables.scss";
+
+.btn {
+    border: 1px solid var(--White);
+    font-family: "livvic";
+    font-weight: 600;
+    font-size: 0.9rem; /*18*/
+    line-height: 1.4rem; /*28*/
+    color: var(--White);
+    padding: 10px;
+    border-radius: 24px;
+    background-color: transparent;
+    width: 160px;
+    margin-top: 12px;
+    transition: all 0.4s ease-in-out;
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: var(--White);
+        color: var(--MidnightGreen);
+    }
+}
+.dark {
+    border: 1px solid var(--Dark);
+    color: var(--Dark);
+    &:hover {
+        cursor: pointer;
+        background-color: var(--Dark);
+        color: var(--White);
+    }
+}

@@ -1,0 +1,108 @@
+@import "../styles/variables.scss";
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 24px 0;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+        padding: 64px 40px 0;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 75px 0 0;
+        width: 77%;
+    }
+}
+.header_open {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        hsla(228, 39%, 83%, 0.4),
+        hsla(228, 39%, 83%, 0.4)
+    );
+}
+
+.navigation_wrap {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 80%;
+    }
+}
+
+.navigation_mobile {
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding-top: 112px;
+    padding-left: 48px;
+    background: var(--PoliceBlue);
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+
+    &::after {
+        content: url("../public/images/bg-pattern-about-1-mobile-nav-1.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 140px;
+    }
+    a {
+        font-family: "livvic";
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 1.4rem;
+        color: var(--White);
+        text-decoration: none;
+        margin-bottom: 24px;
+        transition: all 0.3s ease-in-out;
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 0.9rem;
+        }
+        &:hover {
+            color: var(--LightCoral);
+            cursor: pointer;
+        }
+    }
+}
+
+.menu_btn {
+    background-color: transparent;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    border: none;
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}

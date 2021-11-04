@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+.story_container {
+    padding-top: 36px;
+    background: url("../public/images/icon-quotes.svg") top center;
+    background-repeat: no-repeat;
+
+    h3 {
+        color: var(--RaptureBlue);
+        margin-top: 16px;
+        @media screen and (min-width: $desktop) {
+            margin-top: 24px;
+        }
+    }
+    p {
+        &:nth-child(1) {
+            font-size: 0.75rem;
+        }
+    }
+}
+.position {
+    font-weight: 500;
+    font-size: 0.65rem /*13*/;
+    margin-bottom: 16px;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 32px;
+    }
+}
+.image {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    margin: auto;
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}

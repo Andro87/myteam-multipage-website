@@ -1,0 +1,84 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "livvic";
+    src: url("../public/fonts/Livvic-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "livvic";
+    src: url("../public/fonts/Livvic-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "livvic";
+    src: url("../public/fonts/Livvic-Medium.ttf");
+    font-weight: 500;
+}
+:root {
+    /*Primary*/
+
+    --MidnightGreen: hsla(186, 100%, 8%, 1);
+    --LightCoral: hsla(0, 87%, 73%, 1);
+    --White: hsla(0, 0%, 100%, 1);
+
+    /*Secondry*/
+    --RaptureBlue: hsla(179, 41%, 63%, 1);
+    --PoliceBlue: hsla(187, 41%, 29%, 1);
+    --DeepJungleGreen: hsla(186, 100%, 14%, 1);
+    --SacramentoStateGreen: hsla(
+        186,
+        97%,
+        17%,
+        1
+    ); /*invece di 10forse 17 cambiato con 17*/
+    --DarkGreen: hsla(186, 100%, 8%, 1);
+    --Dark: hsla(186, 97%, 10%, 1);
+}
+html {
+    font-size: 20px;
+}
+h1,
+h2,
+h3 {
+    font-family: "livvic";
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem; /*40*/
+    line-height: 2rem; /*40*/
+    @media screen and (min-width: $tablet) {
+        font-size: 3.2rem; /*64*/
+        line-height: 2.8rem; /*56*/
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 5rem; /*100*/
+        line-height: 5rem; /*100*/
+    }
+}
+h2 {
+    font-size: 1.6rem; /*32*/
+    line-height: 1.6rem; /*32*/
+
+    @media screen and (min-width: $desktop) {
+        font-size: 2.4rem; /*48*/
+        line-height: 2.4rem; /*48*/
+    }
+}
+h3 {
+    font-size: 0.9rem; /*18*/
+    line-height: 1.4rem; /*28*/
+}
+
+p {
+    font-family: "livvic";
+    font-weight: 600;
+}
