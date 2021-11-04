@@ -3,9 +3,6 @@ import styles from "../styles/contact.module.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Info from "../components/info";
-import Person from "../svg/icon-person.svg";
-import Cog from "../svg/icon-cog.svg";
-import Chart from "../svg/icon-chart.svg";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 export default function Contact() {

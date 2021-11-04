@@ -30,9 +30,7 @@ const Header: React.FunctionComponent<Props> = props => {
                     </Link>
                 </nav>
                 <Link href="/contact">
-                    <a>
-                        <Button title="contact us" />
-                    </a>
+                    <a className={styles.contact_btn}>contact us</a>
                 </Link>
             </div>
             <button
